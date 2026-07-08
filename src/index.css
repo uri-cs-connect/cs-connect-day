@@ -10,3 +10,24 @@
 
   --accent: #6BA9E8;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: var(--gray-900);
+    background: var(--uri-white);
+}
+
+#root {
+    min-height: 100vh;
+}
