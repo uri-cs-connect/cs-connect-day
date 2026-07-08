@@ -36,7 +36,7 @@ function NavBar() {
                 <NavLink to="/agenda" className="navbar__link" onClick={closeMenu}>Agenda</NavLink>
                 <NavLink to="/" className="navbar__link" onClick={closeMenu}>Partner With Us</NavLink>
 
-                <Link to="/" className="navbar__button" onClick={closeMenu}>Register</Link>
+                <Link to="https://app.joinhandshake.com/stu/events/1957249" className="navbar__button" onClick={closeMenu}>Register</Link>
             </nav>
         </header>
     );
