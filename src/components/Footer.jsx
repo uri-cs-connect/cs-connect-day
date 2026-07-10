@@ -14,7 +14,7 @@ function Footer() {
 
                     <p>September 18, 2026</p>
                     <p>Memorial Union Ballroom, 50 Lower College Rd, Kingston, RI 02881</p>
-                    <a href="mailto:csconnect@uri.edu">csconnect@uri.edu</a>
+                    <a href="mailto:kathryn_vani@uri.edu">kathryn_vani@uri.edu</a>
                 </div>
 
                 <div className="footer__column">
@@ -25,7 +25,7 @@ function Footer() {
                     </a>
 
                     <a href="https://career.uri.edu/" target="_blank" rel="noreferrer">
-                        Center for Career & Experiential Education
+                        Career Center for Experiential Education
                     </a>
 
                 </div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import logo from '../assets/vertical-logo.png';
+import logo from '../assets/vertical-logo2.png';
 import './Hero.css';
 
 function Hero() {
