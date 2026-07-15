@@ -92,7 +92,7 @@ function PartnerWithUs() {
     }
 
     return (
-        <main className="partner-page">
+        <main id="main-content" className="partner-page">
             <section className="partner-hero">
                 <p className="section-eyebrow">Connect With Our Students</p>
                 <h1>Support URI CS Students</h1>
@@ -132,6 +132,7 @@ function PartnerWithUs() {
 
                 <div className="engagement-carousel">
                     <button
+                        type="button"
                         className="carousel-button"
                         onClick={() =>
                             setActiveEngagement(
@@ -156,6 +157,7 @@ function PartnerWithUs() {
                     </article>
 
                     <button
+                        type="button"
                         className="carousel-button"
                         onClick={() =>
                             setActiveEngagement(
@@ -174,6 +176,7 @@ function PartnerWithUs() {
                     {engagementOptions.map((option, index) => (
                         <button
                             key={option.title}
+                            type="button"
                             className={activeEngagement === index ? 'carousel-dot carousel-dot--active' : 'carousel-dot'}
                             onClick={() => setActiveEngagement(index)}
                             aria-label={`View ${option.title}`}
@@ -213,15 +216,22 @@ function PartnerWithUs() {
                                 key={faq.question}
                             >
                                 <button
+                                    id={`faq-button-${index}`}
                                     className="faq-item__question"
                                     onClick={() => toggleFaq(index)}
                                     aria-expanded={isOpen}
+                                    aria-controls={`faq-answer-${index}`}
                                 >
                                     <span>{faq.question}</span>
-                                    <strong>+</strong>
+                                    <strong aria-hidden="true">+</strong>
                                 </button>
 
-                                <div className="faq-item__answer">
+                                <div
+                                    id={`faq-answer-${index}`}
+                                    className="faq-item__answer"
+                                    role="region"
+                                    aria-labelledby={`faq-button-${index}`}
+                                >
                                     <p>{faq.answer}</p>
                                 </div>
                             </article>

@@ -129,7 +129,7 @@ function Agenda() {
     }
 
     return (
-        <main className="agenda-page">
+        <main id="main-content" className="agenda-page">
             <section className="agenda-hero">
                 <p className="section-eyebrow">September 18, 2026</p>
                 <h1>URI CS Connect Day Program</h1>

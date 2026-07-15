@@ -36,7 +36,8 @@
     line-height: 1.5;
 }
 
-.footer__column a:hover {
+.footer__column a:hover,
+.footer__column a:focus-visible {
     color: var(--uri-light-blue);
 }
 
@@ -77,7 +78,8 @@
     color: var(--uri-white);
 }
 
-.footer__socials a:hover {
+.footer__socials a:hover,
+.footer__socials a:focus-visible {
     background: var(--uri-light-blue);
     border-color: var(--uri-light-blue);
     transform: translateY(-3px);

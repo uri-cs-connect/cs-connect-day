@@ -2,39 +2,39 @@ import { useEffect, useState } from 'react';
 import logo from '../assets/vertical-logo2.png';
 import './Hero.css';
 
-function Hero() {
-  const eventDate = new Date('September 18, 2026 08:30:00').getTime();
+function getTimeLeft(eventDate) {
+  const now = new Date().getTime();
+  const distance = eventDate - now;
 
-  const [timeLeft, setTimeLeft] = useState(getTimeLeft());
-
-  function getTimeLeft() {
-    const now = new Date().getTime();
-    const distance = eventDate - now;
-
-    if (distance <= 0) {
-      return {
-        days: '00',
-        hours: '00',
-        minutes: '00',
-        seconds: '00',
-      };
-    }
-
+  if (distance <= 0) {
     return {
-      days: String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0'),
-      hours: String(Math.floor((distance / (1000 * 60 * 60)) % 24)).padStart(2, '0'),
-      minutes: String(Math.floor((distance / (1000 * 60)) % 60)).padStart(2, '0'),
-      seconds: String(Math.floor((distance / 1000) % 60)).padStart(2, '0'),
+      days: '00',
+      hours: '00',
+      minutes: '00',
+      seconds: '00',
     };
   }
 
+  return {
+    days: String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0'),
+    hours: String(Math.floor((distance / (1000 * 60 * 60)) % 24)).padStart(2, '0'),
+    minutes: String(Math.floor((distance / (1000 * 60)) % 60)).padStart(2, '0'),
+    seconds: String(Math.floor((distance / 1000) % 60)).padStart(2, '0'),
+  };
+}
+
+function Hero() {
+  const eventDate = new Date('September 18, 2026 08:30:00').getTime();
+
+  const [timeLeft, setTimeLeft] = useState(() => getTimeLeft(eventDate));
+
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(getTimeLeft());
+      setTimeLeft(getTimeLeft(eventDate));
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [eventDate]);
 
   return (
     <section className="hero">

@@ -41,7 +41,9 @@
 }
 
 .partner-hero__button:hover,
-.partner-cta__button:hover {
+.partner-cta__button:hover,
+.partner-hero__button:focus-visible,
+.partner-cta__button:focus-visible {
     background: var(--uri-light-blue);
     border-color: var(--uri-light-blue);
 }
@@ -206,7 +208,8 @@
         transform 0.25s ease;
 }
 
-.carousel-button:hover {
+.carousel-button:hover,
+.carousel-button:focus-visible {
     background: var(--uri-light-blue);
     transform: translateY(-3px);
 }
@@ -227,6 +230,11 @@
 
     background: rgba(0, 33, 71, 0.25);
     cursor: pointer;
+}
+
+.carousel-dot:focus-visible {
+    outline: 3px solid var(--uri-navy);
+    outline-offset: 3px;
 }
 
 .carousel-dot--active {
@@ -313,6 +321,11 @@
     color: var(--uri-navy);
     font-size: 1.1rem;
     font-weight: 900;
+}
+
+.faq-item__question:focus-visible {
+    outline: 3px solid var(--uri-navy);
+    outline-offset: 3px;
 }
 
 .faq-item__question strong {

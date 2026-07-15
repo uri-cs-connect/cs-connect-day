@@ -42,7 +42,8 @@
     text-shadow: 0 1px 2px rgba(255, 255, 255, 0.45);
 }
 
-.navbar__link:hover {
+.navbar__link:hover,
+.navbar__link:focus-visible {
     color: var(--uri-white);
 }
 
@@ -56,7 +57,8 @@
     border: 2px solid var(--uri-navy);
 }
 
-.navbar__button:hover {
+.navbar__button:hover,
+.navbar__button:focus-visible {
     background: var(--uri-light-blue);
     border-color: var(--uri-light-blue);
 }
@@ -69,6 +71,8 @@
     background: none;
     border: none;
     cursor: pointer;
+    padding: 0.35rem;
+    border-radius: 8px;
 }
 
 .navbar__toggle span {
@@ -76,6 +80,11 @@
     height: 3px;
     background: var(--uri-navy);
     border-radius: 999px;
+}
+
+.navbar__toggle:focus-visible {
+    outline: 3px solid var(--uri-navy);
+    outline-offset: 3px;
 }
 
 

@@ -12,7 +12,7 @@ function Footer() {
                     <h2>Event</h2>
 
                     <p>September 18, 2026</p>
-                    <p>Memorial Union Ballroom, 50 Lower College Rd, Kingston, RI 02881</p>
+                    <p>Memorial Union Ballroom <br /> 50 Lower College Rd, Kingston, RI 02881</p>
                     <a href="mailto:kathryn_vani@uri.edu">kathryn_vani@uri.edu</a>
                 </div>
 
@@ -33,28 +33,24 @@ function Footer() {
                     <h2>Connect</h2>
 
                     <div className="footer__socials">
-                        <a href="https://app.joinhandshake.com/stu/events/1957249" aria-label="Handshake URI CS Connect Day Event" target="_blank" rel="noreferrer">
-                            <img src={handshakeLogo} alt="Handshake" />
+                        <a href="https://app.joinhandshake.com/stu/events/1957249" aria-label="Handshake URI CS Connect Day Event" target="_blank" rel="noopener noreferrer">
+                            <img src={handshakeLogo} alt="" aria-hidden="true" />
                         </a>
 
-                        <a href="https://www.facebook.com/uri.ccee/" aria-label="URI CCEE Facebook" target="_blank" rel="noreferrer">
-                            <FaFacebookF />
+                        <a href="https://www.facebook.com/uri.ccee/" aria-label="URI CCEE Facebook" target="_blank" rel="noopener noreferrer">
+                            <FaFacebookF aria-hidden="true" />
                         </a>
 
-                        <a href="https://www.instagram.com/uriccee/" aria-label="URI CCEE Instagram" target="_blank" rel="noreferrer">
-                            <FaInstagram />
+                        <a href="https://www.instagram.com/uriccee/" aria-label="URI CCEE Instagram" target="_blank" rel="noopener noreferrer">
+                            <FaInstagram aria-hidden="true" />
                         </a>
 
-                        <a href="https://www.linkedin.com/company/uri-ccee/posts/?feedView=all" aria-label="URI CCEE Linkedin" target="_blank" rel="noreferrer">
-                            <FaLinkedin />
+                        <a href="https://www.linkedin.com/company/uri-ccee/posts/?feedView=all" aria-label="URI CCEE Linkedin" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin aria-hidden="true" />
                         </a>
                     </div>
                 </div>
 
-            </div>
-
-            <div className="footer__bottom">
-                <p>© 2026 URI CS Connect Day</p>
             </div>
         </footer>
     );

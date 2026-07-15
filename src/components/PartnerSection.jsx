@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './PartnerSection.css';
 
 import fidelityLogo from '../assets/partner-logos/fidelity.png';
+import schneiderLogo from '../assets/partner-logos/schneider.png';
 import dfcscLogo from '../assets/partner-logos/dfcsc.webp';
 
 
@@ -12,14 +13,14 @@ const partners = [
         url: "https://www.fidelity.com"
     },
     {
+        name: "Schneider Electric",
+        logo: schneiderLogo,
+        url: "https://www.se.com/us/en/"
+    },
+    {
         name: "URI’s Digital Forensics & Cyber Security Center",
         logo: dfcscLogo,
         url: "https://web.uri.edu/cs/dfcsc/"
-    },
-    {
-        name: "TBD",
-        logo: null,
-        url: "TBD"
     },
     {
         name: "TBD",

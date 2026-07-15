@@ -24,7 +24,7 @@ const agendaItems = [
     location: 'Memorial Union Ballroom',
     description:
       'Employers and alumni discuss recruiting, interviews, AI in hiring, and career pathways.',
-    featured: 'Industry Partners • Alumni',
+    featured: 'Schneider Electric • Alumni',
   },
   {
     time: '12:30 PM – 1:50 PM',
@@ -32,7 +32,7 @@ const agendaItems = [
     location: 'Atrium 1',
     description:
       'Students connect with employers, alumni, faculty, and graduate program representatives.',
-    featured: 'Featured Employers',
+    featured: 'Fidelity • Featured Employers',
   },
   {
     time: '2:00 PM – 5:00 PM',
